@@ -6,6 +6,17 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
+
+/**************\
+ *               MEMBROS                 *
+ * GUILHERME.O.SANTOS, RA: 1252418661    *
+ * NATHALIA NOVAIS,    RA: 12524115300   *
+ * EMILLY SIQUEIRA,    RA: 1252411096    *
+ * KAIKY HENRIQUE,     RA: 12524116655   *
+ * MATHEUS MENDES,     RA: 12524141170   *
+ *                                       *
+\**************/
+
 public class ChatBot {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -15,31 +26,31 @@ public class ChatBot {
 
         // MENSAGENS DE APRESENTAÇÃO E DESPEDIDA //
         String BemVindo = "\u001B[36m" +
-                "╭──────────────────────────────────────────────────╮\n" +
+                "⸮──────────────────────────────────────────────────╮\n" +
                 "│                                                  │\n" +
                 "│            Bem-Vindo ao ChatBot Vader            │\n" +
                 "│              Seu assistente Virtual              │\n" +
                 "│                                                  │\n" +
-                "╰──────────────────────────────────────────────────╯\u001B[0m";
+                "⸮──────────────────────────────────────────────────╯\u001B[0m";
             
         String AteMais ="\u001B[36m" +
-                "╭──────────────────────────────────────────────────╮\n" +
+                "⸮──────────────────────────────────────────────────?\n" +
                 "│                                                  │\n" +
                 "│             Obrigado por utilizar o              │\n" +
                 "│                  ChatBot Vader                   │\n" +
                 "│                                                  │\n" +
-                "╰──────────────────────────────────────────────────╯\u001B[0m";
+                "⸮──────────────────────────────────────────────────?\u001B[0m";
                 
         String Perguntas = "\u001B[36m" +
-                "╭────────────────────────────────────────────────────────────────────────────────────────╮\n" +
+                "⸮────────────────────────────────────────────────────────────────────────────────────────?\n" +
                 "│                                Perguntas Frequentes                                    │\n" +
                 "│                                                                                        |\n" +
                 "│  Tempo                                 |  Quem escreveu dom quixote                    │\n" +
-                "│  Quem eh voce                          |  Oceano mais profundo                         │\n" +
-                "│  Capital do brasil                     |  Teoria da relatividade                       │\n" +
-                "│  Maior planeta do sistema solar        |  O pais mais populoso do mundo                │\n" +
-                "│  Quantos anos tem o universo           |  Membros                                      │\n" +
-                "│  Animal mais veloz do mundo            |  Data                                         │\n" +
+                "│  Quem eh você                          |  Qual o oceano mais profundo                  │\n" +
+                "│  Capital do Brasil                     |  Qual a teoria da relatividade                │\n" +
+                "│  Qual o maior planeta do sistema solar |  Qual o pais mais populoso do mundo           │\n" +
+                "│  Quantos anos tem o universo           |  Criadores                                    │\n" +
+                "│  Qual o animal mais veloz do mundo     |  Data                                         │\n" +
                 "│  Lingua mais falada no mundo           |  Oi                                           │\n" +
                 "│  Somar                                 |  Subtrair                                     │\n" +
                 "│  Multiplicar                           |  Dividir                                      │\n" +
@@ -47,7 +58,7 @@ public class ChatBot {
                 "│                                                                                        │\n" +
                 "│                                    ChatBot Vader                                       │\n" +
                 "│                                                                                        │\n" +
-                "╰────────────────────────────────────────────────────────────────────────────────────────╯\u001B[0m";
+                "⸮────────────────────────────────────────────────────────────────────────────────────────?\u001B[0m";
 
         System.out.println(BemVindo);
         System.out.println();
@@ -74,20 +85,20 @@ public class ChatBot {
         respostas.put("oi", "Olá, \u001B[36m" + nome + "\u001B[32m! Como posso te ajudar?");
         respostas.put("muito obrigado", "Eu que agradeço, \u001B[36m" + nome + "\u001B[0m!");
         respostas.put("tempo", "Em São Paulo, a temperatura é 25°C e a umidade é 69%");
-        respostas.put("sair", "Poxa vida, nossa conversa estava tão boa. Até mais, \u001B[36m" + nome + "!\u001B[0m");
+        respostas.put("sair", "Se tiver mais perguntas, estou à disposição. Até mais, \u001B[36m" + nome + "!\u001B[0m");
         respostas.put("quem eh voce", "Eu sou Vader, seu assistente virtual.");
         respostas.put("capital do brasil", "A capital do Brasil é Brasília.");
-        respostas.put("maior planeta do sistema solar", "O maior planeta do sistema solar é Júpiter.");
+        respostas.put("qual o maior planeta do sistema solar", "O maior planeta do sistema solar é Júpiter.");
         respostas.put("quantos anos tem o universo", "O universo tem cerca de 13,8 bilhões de anos.");
         respostas.put("quem pintou a mona lisa", "A Mona Lisa foi pintada por Leonardo da Vinci.");
-        respostas.put("animal mais veloz do mundo", "O animal mais rápido do mundo é o falcão-peregrino.");
+        respostas.put("qual o animal mais veloz do mundo", "O animal mais rápido do mundo é o falcão-peregrino.");
         respostas.put("lingua mais falada no mundo", "A língua mais falada no mundo é o mandarim.");
         respostas.put("quem escreveu dom quixote", "Dom Quixote foi escrito por Miguel de Cervantes.");
-        respostas.put("oceano mais profundo", "O oceano mais profundo é o Oceano Pacífico.");
-        respostas.put("teoria da relatividade", "A teoria da relatividade foi desenvolvida por Albert Einstein e explica a relação entre espaço e tempo.");
-        respostas.put("o pais mais populoso do mundo", "O país mais populoso do mundo é a China.");
+        respostas.put("qual o oceano mais profundo", "O oceano mais profundo é o Oceano Pacífico.");
+        respostas.put("qual a teoria da relatividade", "A teoria da relatividade foi desenvolvida por Albert Einstein e explica a relação entre espaço e tempo.");
+        respostas.put("qual o pais mais populoso do mundo", "O país mais populoso do mundo é a China.");
         respostas.put("qual o maior animal terrestre do mundo", "O maior animal terrestre do mundo é o elefante africano.");
-        respostas.put("membros", "Os membros do grupo são: \u001B[36m Guilherme.O.Santos, Nathalia Novais, Kaiky Henrique, Emelly Siqueira e Matheus Mendes\u001B[0m");
+        respostas.put("criadores", "Os meus criadores são: \u001B[36m Guilherme.O.Santos, Nathália Novais, Kaiky Henrique, Emelly Siqueira e Matheus Mendes\u001B[0m");
 
         // Respostas para perguntas sobre data e operações matemáticas
         respostas.put("data", "Hoje é: \u001B[36m" + LocalDateTime.now().format(Data) + "\u001B[0m");
@@ -121,8 +132,9 @@ public class ChatBot {
 
                 if (UserInput.equals("somar") || UserInput.equals("subtrair") || UserInput.equals("multiplicar") || UserInput.equals("dividir") || UserInput.equals("potencia")) {
                     System.out.print("\u001B[33m" + nome + ": \u001B[0m");
+                    //.SPLIT(" ") Este método divide a linha de entrada em substrings com base em um delimitador, neste caso, um espaço em branco //
                     String[] numeros = sc.nextLine().split(" ");
-                //.SPLIT(" ") Este método divide a linha de entrada em substrings com base em um delimitador, neste caso, um espaço em branco //
+                
 
                     // "numeros.length == 2" Verifica se a array 'numeros' tenha exatamente dois números //
                     // "isNumeric" Verifica se os elementos da array 'numeros' são numéricos //
@@ -162,7 +174,7 @@ public class ChatBot {
         }
 
         System.out.println(AteMais);
-        System.out.println("\u001B[36mVersão beta 106.1, feito por grupo\u001B[0m");
+        System.out.println("\u001B[36mVersão beta 106.1, feito por grupo A08 \u001B[0m");
         sc.close();
     }
 
